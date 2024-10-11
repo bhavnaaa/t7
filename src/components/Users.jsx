@@ -18,7 +18,7 @@ const Users = () => {
     const fetchUsers = async () => {
       setLoading(true); // Set loading to true before fetching
       try {
-        const response = await fetch("http://localhost:4000/users");
+        const response = await fetch("https://t7-2.onrender.com/users");
         const data = await response.json();
         setRows(data);
       } catch (error) {
