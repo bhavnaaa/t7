@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #f0efe6; /* Soft beige background */
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #8e44ad, #f39c12); /* Gradient from purple to orange */
+}
+
+.login-box {
+  width: 90%;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 20px; /* More rounded corners */
+  background-color: #ffffff; /* Bright white for contrast */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.login-title {
+  font-size: 2.5rem;
+  color: #4a235a; /* Dark purple color for title */
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px; /* Slightly spaced letters */
+  text-transform: uppercase; /* Makes the title bold */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.login-header {
+  color: #6c757d; /* Muted grey for header */
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.login-input .MuiOutlinedInput-root {
+  color: #4a235a; /* Dark purple for input text */
+}
+
+.login-input .MuiOutlinedInput-root fieldset {
+  border-color: #d4a1ff; /* Light lavender border */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.login-input .MuiOutlinedInput-root:hover fieldset {
+  border-color: #8e44ad; /* Deep purple on hover */
+}
+
+.login-input .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #8e44ad; /* Focus state border color */
+}
+
+.login-input .MuiOutlinedInput-root input {
+  color: #4a235a; /* Dark purple for input text */
+  background-color: #faf3e0; /* Soft cream background for input */
+  border-radius: 10px; /* Rounded corners for input */
+  padding: 10px; /* Padding inside input */
+}
+
+.login-input .MuiOutlinedInput-root input::placeholder {
+  color: #ccc; /* Lighter grey for placeholder text */
+}
+
+.login-button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%; /* Full width button */
+  border: none;
+  border-radius: 10px;
+  background-color: #8e44ad; /* Purple button color */
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-button:hover {
+  background-color: #f39c12; /* Orange shade on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+@media (max-width: 600px) {
+  .login-title {
+    font-size: 2rem; /* Smaller title on mobile */
+  }
+
+  .login-box {
+    padding: 30px; /* Less padding on mobile */
+  }
+
+  .login-button {
+    font-size: 1rem; /* Smaller button text on mobile */
+    padding: 10px; /* Adjust button padding on mobile */
+  }
+}

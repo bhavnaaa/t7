@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.task-lists-container {
+  width: 90%; /* Adjusted width for better responsiveness */
+  margin: 30px auto;
+  padding: 25px; /* Increased padding for a more spacious layout */
+  background-color: #2c3e50; /* Dark blue background for the container */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2); /* Darker shadow for better contrast */
+  position: relative;
+}
+
+.task-lists-title {
+  color: #ecf0f1; /* Light grey for the title */
+  text-align: center;
+  margin-bottom: 25px; /* Increased bottom margin for spacing */
+  font-weight: bold;
+  font-size: 2rem; /* Increased font size for visibility */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for better depth */
+}
+
+.data-grid-container {
+  height: 450px; /* Increased height for better data display */
+  background-color: #34495e; /* Darker grey-blue for the data grid */
+  border-radius: 15px; /* More rounded corners */
+  padding: 15px; /* Increased padding for spacing */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  position: relative;
+}
+
+.custom-data-grid .MuiDataGrid-root {
+  border: none;
+  font-size: 1rem; /* Default font size for better readability */
+}
+
+.custom-data-grid .MuiDataGrid-cell {
+  color: #ecf0f1; /* Light grey for text */
+  background-color: #1abc9c; /* Teal background for cells */
+  border-bottom: 1px solid #16a085; /* Teal border between rows */
+}
+
+.custom-data-grid .MuiDataGrid-columnHeaders {
+  background-color: #16a085; /* Darker teal for headers */
+  color: #ffffff; /* White text for headers */
+  font-weight: bold;
+}
+
+.custom-data-grid .MuiDataGrid-footerContainer {
+  background-color: #2ecc71; /* Light green footer background */
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .task-lists-container {
+    width: 95%;
+    padding: 20px; /* Adjusted padding */
+  }
+
+  .task-lists-title {
+    font-size: 1.75rem; /* Adjusted font size */
+  }
+
+  .data-grid-container {
+    height: 400px; /* Slightly reduced height */
+  }
+
+  .custom-data-grid .MuiDataGrid-cell,
+  .custom-data-grid .MuiDataGrid-columnHeaders {
+    font-size: 0.9rem; /* Adjusted font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .task-lists-container {
+    width: 100%;
+    padding: 15px; /* Reduced padding */
+  }
+
+  .task-lists-title {
+    font-size: 1.5rem; /* Adjusted font size for readability */
+  }
+
+  .data-grid-container {
+    height: 350px; /* Adjusted height */
+  }
+
+  .custom-data-grid .MuiDataGrid-cell,
+  .custom-data-grid .MuiDataGrid-columnHeaders {
+    font-size: 0.8rem; /* Adjusted font size */
+  }
+}
